@@ -1,7 +1,11 @@
 import * as core from 'dva-core';
 import TinyBee from './bee';
+import { createConnect } from './connect';
 import { createLogger } from 'redux-logger';
 import createLoading from 'dva-loading';
+
+export const connect = createConnect;
+export const bee = TinyBee;
 
 export function createDvaApp(appInstance, models = []) {
     //创建app

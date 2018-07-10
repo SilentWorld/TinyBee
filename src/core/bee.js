@@ -1,13 +1,13 @@
 import connect from './connect.js';
 console.log('-------', my);
 
-let proxy = AFAppX.$global.bridge;
+let proxy = my;
 
 const TinyBee = {
     origin: proxy,
     _promiseCache: {},
     get app() {
-        return AFAppX.getApp();
+        return getApp();
     },
 
     get currentPages() {

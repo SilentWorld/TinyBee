@@ -1,4 +1,5 @@
-export function test() {
-    console.log('test');
-    return 'test-gogo';
-}
+import * as core from './src/core';
+
+export default {
+    core
+};
