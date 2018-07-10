@@ -1,5 +1,4 @@
 import connect from './connect.js';
-console.log('-------', my);
 
 let proxy = my;
 
@@ -35,9 +34,6 @@ const TinyBee = {
 };
 
 const strats = {};
-/**
- * Data
- */
 
 strats.data = function data(target, source) {
     return Object.assign(target, source);
@@ -67,7 +63,7 @@ function defaultStrat(target, source) {
     return source === undefined ? target : source;
 }
 
-function mergeOptions(target, ...args) {
+export function mergeOptions(target, ...args) {
     const hasOwn = Object.prototype.hasOwnProperty;
     if (target) {
         args.forEach(source => {
@@ -86,7 +82,5 @@ function mergeOptions(target, ...args) {
     }
     return target;
 }
-
-export { mergeOptions, connect };
 
 export default TinyBee;

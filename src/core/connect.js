@@ -41,7 +41,7 @@ const shallowEqual = (objA, objB) => {
 const defaultMapStateToProps = () => ({});
 const defaultMapDispatchToProps = dispatch => ({ dispatch });
 
-export const createConnect = (mapStateToProps, mapDispatchToProps) => {
+export const connect = (mapStateToProps, mapDispatchToProps) => {
     const app = Bee.app;
     const mapState = mapStateToProps || defaultMapStateToProps;
     // const mapDispatch = mapDispatchToProps && typeof mapDispatchToProps === 'object' ?

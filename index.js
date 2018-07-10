@@ -1,5 +1,3 @@
-import * as core from './src/core';
+import core from './src/core';
 
-export default {
-    core
-};
+export default core;
