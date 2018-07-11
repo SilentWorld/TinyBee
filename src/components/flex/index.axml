@@ -1,0 +1,5 @@
+<view class="am-flexbox {{wrapCls}} {{className}}" style={{styles}}>
+	<slot>
+		<view></view>
+	</slot>
+</view>
