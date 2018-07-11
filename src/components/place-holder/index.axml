@@ -1,0 +1,3 @@
+<view class="{{className}} placeholder">
+<slot>BLOCK</slot>
+</view>

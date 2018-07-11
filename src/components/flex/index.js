@@ -3,7 +3,8 @@ Component({
         wrapCls: ''
     },
     props: {
-        className: ''
+        className: '',
+        styleName: ''
     },
     methods: {},
     didMount(prevProps, prevData) {

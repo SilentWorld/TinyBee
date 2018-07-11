@@ -1,0 +1,3 @@
+<view class="am-wingblank-{{size}} {{className}}" style="styleName">
+<slot></slot>
+<view>
